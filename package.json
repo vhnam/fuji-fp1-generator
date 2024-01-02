@@ -1,0 +1,18 @@
+{
+  "name": "fuji-fp1-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "dependencies": {
+    "lodash.kebabcase": "^4.1.1",
+    "lodash.trim": "^4.5.1",
+    "xmlbuilder2": "^3.1.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
