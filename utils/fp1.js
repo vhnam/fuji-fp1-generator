@@ -40,7 +40,7 @@ function transformRecipeToObj(recipe) {
         DynamicRange: parseDynamicRange(recipe["dynamic-range"]),
         WideDRange: 0,
         FilmSimulation: parseFilmSimulation(recipe["film-simulation"]),
-        BlackImageTone: 0,
+        BlackImageTone: recipe["toning"] ? parseInt(recipe["toning"]) : null,
         MonochromaticColor_RG: 0,
         GrainEffect: grainEffectValue.grainEffect?.toUpperCase(),
         GrainEffectSize: grainEffectValue.grainEffectSize,
