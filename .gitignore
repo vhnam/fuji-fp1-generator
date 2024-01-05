@@ -1,6 +1,7 @@
-/assets
 /node_modules
-/out
+
+/assets
+/dist
 
 .env
 .DS_Store
