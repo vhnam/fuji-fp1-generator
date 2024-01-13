@@ -119,10 +119,23 @@ function parseGrainEffect(grainEffect) {
   };
 }
 
+function parseInteger(value) {
+  try {
+    const parsedValue = parseInt(value);
+    if (isNaN(parsedValue)) {
+      throw new Error('Invalid value');
+    }
+    return parsedValue;
+  } catch (err) {
+    throw err;
+  }
+}
+
 module.exports = {
   parseDynamicRange,
   parseExposureBias,
   parseFilmSimulation,
   parseGrainEffect,
+  parseInteger,
   parseWhiteBalance,
 };
